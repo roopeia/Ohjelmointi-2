@@ -1,17 +1,154 @@
 /* Yleiset asetukset */
 body {
+    
+    margin-left: 20%;
+    margin-right: 20%;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    /*
+    background-image: url('rocket.jpg');
+    */
+    background: black;
+
+}
+
+.main {
+    margin-top: 2px;
+    min-height: 80vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: solid white;
+    border-width: 2px;
+}
+
+.productmain {
+    margin-top: 2px;
+    min-height: 80vh;
+    
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+
+    border: solid white;
+    border-width: 2px;
+}
+
+.kuvadiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 40%;
+    border: solid white;
+    border-width: 2px;
+    margin-top: 2%;
+
+}
+
+.productkuva {
+
+    width: 70%;
+    height: 100%;
+}
+
+.kuvateksti {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: black;
+    padding: 0;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    gap: 12%;
+
+
+}
+
+.productbox {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+
+
+}
+
+
+
+.products {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+   
+}
+
+.image {
+    max-width: 90%;
+    max-height: 90%;
+    border: solid white;
+    border-width: 2px;
+
+}
+
+
+.product {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: solid white;
+    border-width: 2px;
+}
+
+
+
+.yilong {
+    max-width: 80%;
+    
+    border: solid white;
+    border-width: 2px;
+}
+
+header {
+    width: 100%;
+
+    background: none;
+
+    border: solid white;
+    border-width: 2px;
 }
 
 /* Navigaatio */
 nav {
+
+    flex-wrap: wrap;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 30px 60px;
 }
 
 nav h1 {
@@ -37,34 +174,32 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffd700;
+    color: orange;
 }
 
-/* Etusivun sisältö */
-.hero {
-    text-align: center;
-    padding: 80px 20px;
+@media (max-width: 1152px) {
+    body {
+        
+        margin-left: 1%;
+        margin-right: 1%;
+        font-family: Arial, Helvetica, sans-serif;
+        /*
+        background-image: url('rocket.jpg');
+        */
+        background: black;
+
+    }
+
 }
 
-.hero h2 {
-    font-size: 36px;
-}
+@media (max-width: 500px) {
+    nav {
 
-.hero p {
-    font-size: 18px;
-    color: #555;
-}
-
-.hero button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.hero button:hover {
-    background-color: #555;
+        flex-wrap: wrap;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 60px;
+    }
 }
